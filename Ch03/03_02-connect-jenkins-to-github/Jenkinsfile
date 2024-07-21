@@ -26,6 +26,7 @@ pipeline {
     stages {
         stage('Requirements') {
             steps {
+		echo 'Got some new changes from github'
                 echo 'Installing requirements...'
             }
         }
@@ -42,6 +43,7 @@ pipeline {
         stage('Report') {
             steps {
                 echo 'Reporting....'
+		
             }
         }
     }
